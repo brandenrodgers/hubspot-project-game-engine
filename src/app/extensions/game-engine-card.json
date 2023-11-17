@@ -1,0 +1,12 @@
+{
+  "type": "crm-card",
+  "data": {
+    "title": "Game Engine Card",
+    "uid": "game_engine_card",
+    "location": "crm.record.tab",
+    "module": {
+      "file": "Game.jsx"
+    },
+    "objectTypes": [{ "name": "contacts" }]
+  }
+}
