@@ -1,14 +1,14 @@
 {
-  "name": "Snake App",
-  "description": "An app to run the game Snake",
-  "uid": "snake_app",
+  "name": "Game Engine App",
+  "description": "An app to run crm-card games",
+  "uid": "game_engine_app",
   "scopes": ["crm.objects.contacts.read", "crm.objects.contacts.write"],
   "public": false,
   "extensions": {
     "crm": {
       "cards": [
         {
-          "file": "extensions/snake-card.json"
+          "file": "extensions/game-engine-card.json"
         }
       ]
     }
