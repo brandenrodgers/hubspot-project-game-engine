@@ -4,18 +4,12 @@ import Controls from "./Controls";
 import Board from "./Board";
 import BossView from "./BossView";
 
-hubspot.extend(() => <GameEngine />);
+hubspot.extend(() => <SnakeGame />);
 
-const GameEngine = ({}) => {
+const SnakeGame = ({}) => {
   const [bossIsAround, setBossIsAround] = useState(false);
   const [lastInput, setLastInput] = useState(null);
-  const [inputCount, setInputCount] = useState(0);
   const [active, setActive] = useState(false);
-
-  const handleInput = (value) => {
-    setLastInput(value);
-    setInputCount(inputCount + 1);
-  };
 
   const renderContent = () => {
     if (bossIsAround) {
@@ -24,11 +18,11 @@ const GameEngine = ({}) => {
     return (
       <>
         <Controls
-          onInput={handleInput}
+          onInput={(value) => setLastInput(value)}
           onStart={() => setActive(true)}
           onPause={() => setActive(false)}
         />
-        <Board active={active} lastInput={lastInput} inputCount={inputCount} />
+        <Board active={active} lastInput={lastInput} />
       </>
     );
   };

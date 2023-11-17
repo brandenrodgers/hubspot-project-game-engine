@@ -1,6 +1,6 @@
-# HubSpot Game Engine Project
+# HubSpot Snake CRM Card
 
-Seeing if it's possible to use the projects system to create in-app games b/c... why not?
+Building the game Snake in a HubSpot CRM Card
 
 ## Requirements
 

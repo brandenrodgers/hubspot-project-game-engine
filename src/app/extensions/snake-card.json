@@ -1,11 +1,11 @@
 {
   "type": "crm-card",
   "data": {
-    "title": "Game Engine Card",
-    "uid": "game_engine_card",
+    "title": "Snake",
+    "uid": "snake_card",
     "location": "crm.record.tab",
     "module": {
-      "file": "Game.jsx"
+      "file": "SnakeGame.jsx"
     },
     "objectTypes": [{ "name": "contacts" }]
   }

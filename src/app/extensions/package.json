@@ -1,5 +1,5 @@
 {
-  "name": "game-engine-extension",
+  "name": "snake-extension",
   "version": "0.1.0",
   "dependencies": {
     "@hubspot/ui-extensions": "latest",

@@ -24,6 +24,22 @@ export const isCollided = (object1, object2, buffer = 1) => {
   );
 };
 
+export const getRandomCoords = (blocklist = [], xMax, yMax) => {
+  const result = {};
+  let valid = false;
+
+  while (!valid) {
+    result.x = Math.floor(Math.random() * (xMax - 40 + 1) + 20);
+    result.y = Math.floor(Math.random() * (yMax - 40 + 1) + 20);
+
+    valid = !blocklist.some(
+      (coords) => coords.x === result.x && coords.y === result.y
+    );
+  }
+
+  return result;
+};
+
 export function useMove(canvasWidth, canvasHeight) {
   const move = useCallback(
     (object, direction, distance) => {
